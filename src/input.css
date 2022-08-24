@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_item {
+  @apply py-2 inline-block hover:border-solid hover:border-b-[3px] hover:border-[#FF8811] transition duration-200 ease-in-out;
+}
+.service_card {
+  @apply flex gap-5 pb-8 items-center group-hover:opacity-50 hover:!opacity-100 transition duration-200 ease-in-out;
+}
+.photo_card {
+  @apply hover:scale-[1.15] transition duration-200 ease-in flex flex-col justify-center items-center;
+}
+.section_width {
+  @apply w-[75rem] xl:w-[65rem] lg:w-[45rem] md:w-[25rem] my-0 mx-auto;
+}
+.heading {
+  @apply text-5xl font-bold;
+}
+.teammember_photo {
+  @apply w-[18.75rem] h-[18.75rem] mb-6 lg:w-[10rem] lg:h-[10rem] lg:object-cover lg:rounded-full md:w-[8rem] md:h-[8rem];
+}
+.flex_center {
+  @apply flex justify-center items-center;
+}
+.center_margin {
+  @apply my-0 mx-auto;
+}
