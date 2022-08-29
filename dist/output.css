@@ -1089,6 +1089,22 @@ video {
   line-height: 70px;
 }
 
+.leading-\[7px\] {
+  line-height: 7px;
+}
+
+.leading-\[72px\] {
+  line-height: 72px;
+}
+
+.leading-\[80px\] {
+  line-height: 80px;
+}
+
+.leading-\[100px\] {
+  line-height: 100px;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1642,6 +1658,14 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[\] {
+    line-height: ;
+  }
+
+  .lg\:leading-\[70px\] {
+    line-height: 70px;
   }
 }
 
