@@ -12,7 +12,7 @@
   @apply hover:scale-[1.15] transition duration-200 ease-in flex flex-col justify-center items-center;
 }
 .section_width {
-  @apply w-[75rem] xl:w-[65rem] lg:w-[45rem] md:w-[25rem] my-0 mx-auto;
+  @apply w-[1200px] xl:w-[1040px] lg:w-[720px] md:w-[400px] my-0 mx-auto;
 }
 .heading {
   @apply text-5xl font-bold;

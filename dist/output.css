@@ -1195,24 +1195,24 @@ video {
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  width: 75rem;
+  width: 1200px;
 }
 
 @media (max-width: 1400px) {
   .section_width {
-    width: 65rem;
+    width: 1040px;
   }
 }
 
 @media (max-width: 1230px) {
   .section_width {
-    width: 45rem;
+    width: 720px;
   }
 }
 
 @media (max-width: 767px) {
   .section_width {
-    width: 25rem;
+    width: 400px;
   }
 }
 
@@ -1510,14 +1510,6 @@ video {
 }
 
 @media (max-width: 1400px) {
-  .xl\:top-0 {
-    top: 0px;
-  }
-
-  .xl\:top-10 {
-    top: 2.5rem;
-  }
-
   .xl\:top-20 {
     top: 5rem;
   }
@@ -1575,10 +1567,6 @@ video {
 }
 
 @media (max-width: 1230px) {
-  .lg\:top-10 {
-    top: 2.5rem;
-  }
-
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
