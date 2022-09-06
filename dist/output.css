@@ -942,6 +942,10 @@ video {
   background-color: rgb(247 248 249 / var(--tw-bg-opacity));
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -969,11 +973,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .px-3 {
@@ -1251,7 +1250,7 @@ video {
 
 @media (max-width: 767px) {
   .section_width {
-    width: 400px;
+    width: 100%;
   }
 }
 
@@ -1277,10 +1276,10 @@ video {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .teammember_photo {
-    height: 8rem;
-    width: 8rem;
+    height: 7rem;
+    width: 7rem;
   }
 }
 
@@ -1696,12 +1695,16 @@ video {
 }
 
 @media (max-width: 767px) {
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-\[400px\] {
     width: 400px;
   }
 
-  .md\:w-\[35rem\] {
-    width: 35rem;
+  .md\:w-40 {
+    width: 10rem;
   }
 
   .md\:basis-\[100\%\] {
@@ -1716,11 +1719,53 @@ video {
     gap: 0px;
   }
 
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .md\:pt-10 {
     padding-top: 2.5rem;
   }
 
   .md\:pb-2 {
     padding-bottom: 0.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-\[10px\] {
+    font-size: 10px;
   }
 }

@@ -12,13 +12,13 @@
   @apply hover:scale-[1.15] transition duration-200 ease-in flex flex-col justify-center items-center;
 }
 .section_width {
-  @apply w-[1200px] xl:w-[1040px] lg:w-[720px] md:w-[400px] my-0 mx-auto;
+  @apply w-[1200px] xl:w-[1040px] lg:w-[720px] md:w-full my-0 mx-auto;
 }
 .heading {
   @apply text-5xl font-bold;
 }
 .teammember_photo {
-  @apply w-[18.75rem] h-[18.75rem] mb-6 lg:w-[10rem] lg:h-[10rem] lg:object-cover lg:rounded-full md:w-[8rem] md:h-[8rem];
+  @apply w-[18.75rem] h-[18.75rem] mb-6 lg:w-[10rem] lg:h-[10rem] lg:object-cover lg:rounded-full sm:h-28 sm:w-28;
 }
 .flex_center {
   @apply flex justify-center items-center;
