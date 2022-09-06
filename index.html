@@ -12,15 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="src/js/customerOpinion.js" defer></script>
+    <script src="src/js/mobileMenu.js" defer></script>
     <title>Minima</title>
 </head>
 
 <body class="font-poppins">
     <div class="w-full">
         <!-- NAVBAR -->
-        <nav class="w-full fixed h-20 z-50 bg-white">
+        <nav class="w-full fixed  z-50 bg-white">
             <div
-                class="w-[1200px] mx-auto my-0 flex justify-between items-center h-full xl:w-[65rem] lg:w-[720px] md:w-[400px]">
+                class="w-[1200px] h-20 mx-auto my-0 flex justify-between items-center xl:w-[1040px] lg:w-[720px] md:w-[400px]">
                 <div class="flex_center">
                     <a href=""
                         class="bg-black h-14 w-14 rounded-full flex_center text-white font-bold text-2xl hover:bg-custom_orange transition duration-200 ease-in-out">M</a>
@@ -52,12 +54,50 @@
                 <div class="flex_center gap-6">
                     <a href=""
                         class="text-xs bg-black px-6 py-2.5 rounded-lg text-white font-bold hover:bg-custom_orange transition duration-200 ease-in-out">Contact</a>
-                    <div class="hidden lg:block">
+                    <div class="hidden lg:block" id="hamburger">
                         <div class="w-8 h-1 bg-black my-[6px]"></div>
                         <div class="w-8 h-1 bg-black my-[6px]"></div>
                         <div class="w-8 h-1 bg-black my-[6px]"></div>
                     </div>
                 </div>
+            </div>
+            <div class="hidden lg:block h-0 lg:overflow-hidden transition-all duration-[350ms] ease-linear"
+                id="mobileMenu">
+                <ul class="lg:w-[720px] md:w-[400px] my-0 mx-auto">
+                    <a href="">
+                        <li
+                            class="h-10 flex items-center font-bold pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
+                            Home
+                        </li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
+                            About</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
+                            Services</li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
+                            Success story
+                        </li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
+                            Testimonial
+                        </li>
+                    </a>
+                    <a href="">
+                        <li
+                            class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
+                            Our Team</li>
+                    </a>
+                </ul>
             </div>
         </nav>
         <!-- HEADER -->
@@ -238,34 +278,34 @@
             <section class="pb-36 lg:w-[720px] md:w-[400px] mx-auto my-0">
                 <h2 class="heading text-center pb-20 lg:text-3xl lg:pb-10">What our customer says</h2>
                 <img src="src/img/customer.png" alt="photo of a customer"
-                    class="my-0 mx-auto rounded-full w-24 h-24 mb-10">
+                    class="my-0 mx-auto rounded-full w-24 h-24 mb-10" id="customerPhoto">
                 <div class="flex_center gap-32 pb-8">
                     <button
-                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold hover:bg-custom_orange transition duration-200 ease-in-out lg:hidden">
+                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold hover:bg-custom_orange transition duration-200 ease-in-out lg:hidden customerPrevBtn"
+                        id="customerPrevBtn">
                         &#8592; </button>
-                    <p class="text-lg text-center basis-[37%] lg:basis-[100%]">ReachCircle is the friendliest and most
+                    <p class="text-lg text-center basis-[37%] lg:basis-[100%]" id="customerOpinion">ReachCircle is the
+                        friendliest and most
                         efficient
                         company I have ever used. The whole thing takes time to introduce the
                         product and as a result puts forward only the best opportunities that really suit you.
                         they help from start to finish tocreate a great product identity for your company</p>
                     <button
-                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold hover:bg-custom_orange transition duration-200 ease-in-out lg:hidden">&#8594;</button>
+                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold hover:bg-custom_orange transition duration-200 ease-in-out lg:hidden customerNextBtn"
+                        id="customerNextBtn">&#8594;</button>
                 </div>
-                <h4 class="font-bold text-center pb-1">Shalima Hayden</h4>
-                <h5 class="text-sm text-center">Product Designer</h5>
+                <h4 class="font-bold text-center pb-1" id="customerName">Shalima Hayden</h4>
+                <h5 class="text-sm text-center" id="customerJob">Product Designer</h5>
                 <div class="hidden justify-center items-center lg:flex pt-10">
                     <button
-                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold mr-8 hover:bg-custom_orange transition duration-200 ease-in-out">
+                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold mr-4 hover:bg-custom_orange transition duration-200 ease-in-out customerPrevBtn"
+                        id="customerPrevBtn2">
                         &#8592; </button>
-                    <ul class="flex_center">
-                        <li class="bg-black px-3 h-1.5 mr-4 active:bg-custom_orange"></li>
-                        <li class="bg-black px-3 h-1.5 mr-4 active:bg-custom_orange"></li>
-                        <li class="bg-black px-3 h-1.5 mr-4 active:bg-custom_orange"></li>
-                        <li class="bg-black px-3 h-1.5 mr-4 active:bg-custom_orange"></li>
-                        <li class="bg-black px-3 h-1.5 active:bg-custom_orange"></li>
+                    <ul class="flex_center listContainer" id="liContainer">
                     </ul>
                     <button
-                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold ml-8 hover:bg-custom_orange transition duration-200 ease-in-out">&#8594;</button>
+                        class="w-[56px] h-[56px] bg-black text-white rounded-lg font-bold ml-8 hover:bg-custom_orange transition duration-200 ease-in-out customerNextBtn"
+                        id="customerNextBtn2">&#8594;</button>
                 </div>
             </section>
             <section class="section_width flex justify-between items-center pb-32 lg:justify-center">
@@ -354,6 +394,7 @@
             </div>
         </footer>
     </div>
+
 </body>
 
 </html>
