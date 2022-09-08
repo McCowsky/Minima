@@ -642,10 +642,6 @@ video {
   margin-left: 1rem;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -824,6 +820,26 @@ video {
   flex-basis: 21%;
 }
 
+.resize-none {
+  resize: none;
+}
+
+.scroll-mt-56 {
+  scroll-margin-top: 14rem;
+}
+
+.scroll-mt-44 {
+  scroll-margin-top: 11rem;
+}
+
+.scroll-mt-32 {
+  scroll-margin-top: 8rem;
+}
+
+.scroll-mt-36 {
+  scroll-margin-top: 9rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -888,6 +904,10 @@ video {
   gap: 8rem;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -950,11 +970,6 @@ video {
   padding: 0.75rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -963,6 +978,11 @@ video {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .px-12 {
@@ -1515,16 +1535,8 @@ video {
   background-size: 30px 30px;
 }
 
-.hover\:border-b-\[3px\]:hover {
-  border-bottom-width: 3px;
-}
-
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
-}
-
-.hover\:border-solid:hover {
-  border-style: solid;
 }
 
 .hover\:border-custom_orange:hover {
@@ -1709,6 +1721,18 @@ video {
 
   .md\:basis-\[100\%\] {
     flex-basis: 100%;
+  }
+
+  .md\:scroll-mt-28 {
+    scroll-margin-top: 7rem;
+  }
+
+  .md\:scroll-mt-36 {
+    scroll-margin-top: 9rem;
+  }
+
+  .md\:scroll-mt-24 {
+    scroll-margin-top: 6rem;
   }
 
   .md\:gap-10 {

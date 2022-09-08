@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -24,35 +24,47 @@
             <div
                 class="w-[1200px] h-20 mx-auto my-0 flex justify-between items-center xl:w-[1040px] lg:w-[720px] md:w-full md:px-3">
                 <div class="flex_center">
-                    <a href=""
+                    <a href="#"
                         class="bg-black h-14 w-14 rounded-full flex_center text-white font-bold text-2xl hover:bg-custom_orange transition duration-200 ease-in-out">M</a>
-                    <h2 class="pl-4 font-bold text-xl"><a href="">Minima</a></h2>
+                    <h2 class="pl-4 font-bold text-xl"><a href="#" id="home">Minima</a></h2>
                 </div>
                 <div class="lg:hidden">
                     <ul class="flex_center gap-11">
-                        <li class="font-bold nav_item">
-                            <a href="">Home</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="">About us</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="">Services</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="">Success story</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="">Testimonial</a>
-                        </li>
-                        <li
-                            class="py-2 inline-block hover:border-solid hover:border-b-[3px] hover:border-custom_orange transition duration-200 ease-in-out">
-                            <a href="">Our Team</a>
-                        </li>
+                        <a href="#">
+                            <li class="font-bold nav_item">
+                                Home
+                            </li>
+                        </a>
+                        <a href="#aboutus">
+                            <li class="nav_item">
+                                About us
+                            </li>
+                        </a>
+                        <a href="#service">
+                            <li class="nav_item">
+                                Services
+                            </li>
+                        </a>
+                        <a href="#success">
+                            <li class="nav_item">
+                                Success story
+                            </li>
+                        </a>
+                        <a href="#ourteam">
+                            <li class="nav_item">
+                                Our Team
+                            </li>
+                        </a>
+                        <a href="#testimonial">
+                            <li class="nav_item">
+                                Testimonial
+                            </li>
+                        </a>
+
                     </ul>
                 </div>
                 <div class="flex_center gap-6">
-                    <a href=""
+                    <a href="#contact"
                         class="text-xs bg-black px-6 py-2.5 rounded-lg text-white font-bold hover:bg-custom_orange transition duration-200 ease-in-out">Contact</a>
                     <div class="hidden lg:block" id="hamburger">
                         <div class="w-8 h-1 bg-black my-[6px]"></div>
@@ -64,35 +76,35 @@
             <div class="hidden lg:block h-0 lg:overflow-hidden transition-all duration-[350ms] ease-linear"
                 id="mobileMenu">
                 <ul class="lg:w-[720px] md:w-[400px] my-0 mx-auto">
-                    <a href="">
+                    <a href="#">
                         <li
                             class="h-10 flex items-center font-bold pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
                             Home
                         </li>
                     </a>
-                    <a href="">
+                    <a href="#aboutus">
                         <li
                             class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
                             About</li>
                     </a>
-                    <a href="">
+                    <a href="#service">
                         <li
                             class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
                             Services</li>
                     </a>
-                    <a href="">
+                    <a href="#success">
                         <li
                             class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
                             Success story
                         </li>
                     </a>
-                    <a href="">
+                    <a href="#testimonial">
                         <li
                             class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
                             Testimonial
                         </li>
                     </a>
-                    <a href="">
+                    <a href="#ourteam">
                         <li
                             class="h-10 flex items-center pl-4 border-b-[1px] border-black border-solid hover:border-custom_orange hover:border-b-2 transition duration-300 ease-in-out">
                             Our Team</li>
@@ -101,7 +113,7 @@
             </div>
         </nav>
         <!-- HEADER -->
-        <header class="w-full top-20 relative text-white bg-black mb-[5.6400px] xl:mb-[3rem]">
+        <header class="w-full top-20 relative text-white bg-black mb-[5.6400px] xl:mb-[3rem]" id="home">
             <div
                 class="section_width flex justify-start items-center gap-[12rem] xl:gap-[6rem] lg:justify-center md:px-3">
                 <div class="basis-1/2 xl:basis-[60%] lg:basis-[100%]">
@@ -143,7 +155,8 @@
                     </div>
                 </div>
                 <div class="basis-1/2 pt-16 lg:basis-[100%]">
-                    <h2 class="heading pb-10 lg:text-3xl lg:text-center">About us</h2>
+                    <h2 class="heading pb-10 lg:text-3xl lg:text-center scroll-mt-56 md:scroll-mt-28" id="aboutus">About
+                        us</h2>
                     <p class="pb-8 lg:text-center"><span class="font-bold text-lg ">Minima</span> is a template social
                         agency that offers full-service social media solutions.</p>
                     <p class="pb-8 lg:text-center">With our co-founder Philip Deml we have one of the biggest German
@@ -155,7 +168,9 @@
             </section>
             <section class="section_width flex pb-[6.400px] gap-20 group xl:pb-[3rem] md:px-3">
                 <div class="basis-1/2 pt-16 lg:basis-[100%]">
-                    <h2 class="heading pb-16 lg:text-3xl lg:text-center">Service we provide</h2>
+                    <h2 class="heading pb-16 lg:text-3xl lg:text-center scroll-mt-44 md:scroll-mt-36" id="service">
+                        Service we provide
+                    </h2>
                     <p class="text-lg pb-6 lg:text-center">We will help a client's problems to provide their social
                         media peformance
                     </p>
@@ -220,7 +235,8 @@
                     <img src="src/img/success.png" alt="group of people standing in front of a screen" class="w-[150%]">
                 </div>
                 <div class="basis-[38%] lg:basis-[100%]">
-                    <h2 class="heading pb-14 lg:text-3xl lg:text-center">Our success story</h2>
+                    <h2 class="heading pb-14 lg:text-3xl lg:text-center scroll-mt-32" id="success">Our success story
+                    </h2>
                     <p class="pb-8 lg:text-center">Develop a website by finding a product identity that has
                         value and branding to become a characteristic of a company.</p>
                     <div class="flex gap-24 md:gap-10 lg:justify-center">
@@ -240,7 +256,7 @@
                 </div>
             </section>
             <section class="w-[1200px] my-0 mx-auto pb-36 lg:w-[720px] md:w-full md:px-3">
-                <h2 class="heading text-center pb-16 lg:text-3xl">Our Awesome Team</h2>
+                <h2 class="heading text-center pb-16 lg:text-3xl scroll-mt-32" id="ourteam">Our Awesome Team</h2>
                 <div class="flex_center flex-col gap-8 ">
                     <div class="flex_center gap-20 sm:gap-8 sm:flex-wrap">
                         <div class="photo_card ">
@@ -281,7 +297,10 @@
                 </div>
             </section>
             <section class="pb-36 lg:w-[720px] md:w-full mx-auto my-0 md:px-3">
-                <h2 class="heading text-center pb-20 lg:text-3xl lg:pb-10">What our customer says</h2>
+                <h2 class="heading text-center pb-20 lg:text-3xl lg:pb-10 scroll-mt-36 md:scroll-mt-24"
+                    id="testimonial">
+                    What our
+                    customer says</h2>
                 <img src="src/img/customer.png" alt="photo of a customer"
                     class="my-0 mx-auto rounded-full w-24 h-24 mb-10" id="customerPhoto">
                 <div class="flex_center gap-32 pb-8">
@@ -315,7 +334,7 @@
             </section>
             <section class="section_width flex justify-between items-center pb-32 lg:justify-center md:px-3">
                 <div>
-                    <h2 class="heading pb-8 lg:text-3xl lg:text-center">Get in touch</h2>
+                    <h2 class="heading pb-8 lg:text-3xl lg:text-center scroll-mt-32" id="contact">Get in touch</h2>
                     <form action="">
                         <div class="flex gap-4 pb-6">
                             <div class="flex-col flex">
@@ -336,9 +355,9 @@
                                 class="bg-[#F7F8F9] rounded-lg w-full h-12 mb-6 pl-3 focus:outline-custom_orange">
                         </div>
                         <div class="flex flex-col">
-                            <label for="message" class="text-[#4F4F4F] pb-2">Message</label>
+                            <label for="message" class="text-[#4F4F4F] pb-2 ">Message</label>
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"
-                                class="bg-[#F7F8F9] rounded-lg w-full h-32 mb-6 p-3  focus:outline-custom_orange"></textarea>
+                                class="bg-[#F7F8F9] rounded-lg w-full h-32 mb-6 p-3  focus:outline-custom_orange resize-none"></textarea>
                         </div>
                         <button
                             class="font-bold text-white bg-black py-4 px-12 flex_center rounded-lg hover:bg-custom_orange transition duration-200 ease-in-out lg:mx-auto">Send</button>
@@ -360,7 +379,7 @@
                 <div class="w-[85rem] mx-auto my-0 xl:w-[1200px] lg:w-[720px] md:w-full">
                     <div class="flex justify-between lg:flex-wrap lg:justify-center lg:gap-0 md:gap-0">
                         <div class="basis-[21%] lg:basis-[33%] lg:px-12 md:basis-[100%]">
-                            <a href=""
+                            <a href="#"
                                 class="bg-white h-14 w-14 rounded-full flex_center text-black font-bold text-2xl mb-6 lg:mx-auto">M</a>
                             <p class="text-[#E3E3E3] lg:text-center">Minima is a boutique social media agency that
                                 offers full-service
